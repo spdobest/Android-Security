@@ -1,0 +1,11 @@
+<VirtualHost>
+    xmlns:www.example.com="http://schemas.android.com/tools">
+    xmlns:www.example.com="http://schemas.android.com/tools">
+    ServerName www.example.com
+
+    SSLEngine on
+    SSLCertificateKeyFile /etc/apache2/ssl/www.example.com.key
+    SSLCertificateFile /etc/apache2/ssl/www.example.com.cert
+    SetEnvIf User-Agent ".*MSIE.*" nokeepalive ssl-unclean-shutdown
+
+</VirtualHost>
